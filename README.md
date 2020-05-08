@@ -1,24 +1,21 @@
 # vue-test-box
 
-## Project setup
+## install
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install vue-test-box
 ```
 
-### Compiles and minifies for production
+### global use
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+// src/main.js
+import VueTestBox from 'vue-test-box'
+Vue.use(VueTestBox)
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### local use
+```
+import { VueTestBox } from 'vue-test-box'
+export default {
+    components: { VueTestBox }
+}
+```
